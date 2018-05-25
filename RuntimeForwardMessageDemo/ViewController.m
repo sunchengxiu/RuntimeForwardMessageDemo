@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "RCPerson.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    RCPerson *person = [RCPerson new];
+    person.name = @"sun";
+    person.address = @"dalian";
+    [person performSelector:@selector(eat) withObject:nil];
+    NSLog(@"%@--------%@",[person name],[person address]);
 }
 
 

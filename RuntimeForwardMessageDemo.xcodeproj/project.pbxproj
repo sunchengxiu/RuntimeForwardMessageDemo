@@ -15,6 +15,7 @@
 		E8C7221720B7F2960082DCDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C7221620B7F2960082DCDE /* main.m */; };
 		E8C7222120B7F2960082DCDE /* RuntimeForwardMessageDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C7222020B7F2960082DCDE /* RuntimeForwardMessageDemoTests.m */; };
 		E8C7222C20B7F2960082DCDE /* RuntimeForwardMessageDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C7222B20B7F2960082DCDE /* RuntimeForwardMessageDemoUITests.m */; };
+		E8C7223B20B7F3190082DCDE /* RCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C7223A20B7F3190082DCDE /* RCPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		E8C7222720B7F2960082DCDE /* RuntimeForwardMessageDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuntimeForwardMessageDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C7222B20B7F2960082DCDE /* RuntimeForwardMessageDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeForwardMessageDemoUITests.m; sourceTree = "<group>"; };
 		E8C7222D20B7F2960082DCDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8C7223920B7F3190082DCDE /* RCPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCPerson.h; sourceTree = "<group>"; };
+		E8C7223A20B7F3190082DCDE /* RCPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		E8C7220620B7F2950082DCDE /* RuntimeForwardMessageDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E8C7223920B7F3190082DCDE /* RCPerson.h */,
+				E8C7223A20B7F3190082DCDE /* RCPerson.m */,
 				E8C7220720B7F2950082DCDE /* AppDelegate.h */,
 				E8C7220820B7F2950082DCDE /* AppDelegate.m */,
 				E8C7220A20B7F2950082DCDE /* ViewController.h */,
@@ -263,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8C7220C20B7F2950082DCDE /* ViewController.m in Sources */,
+				E8C7223B20B7F3190082DCDE /* RCPerson.m in Sources */,
 				E8C7221720B7F2960082DCDE /* main.m in Sources */,
 				E8C7220920B7F2950082DCDE /* AppDelegate.m in Sources */,
 			);
@@ -434,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9CVMN4UZK4;
 				INFOPLIST_FILE = RuntimeForwardMessageDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9CVMN4UZK4;
 				INFOPLIST_FILE = RuntimeForwardMessageDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
