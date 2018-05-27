@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E85750F720BAD48F00BA76E0 /* RCOneStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = E85750F620BAD48F00BA76E0 /* RCOneStudent.m */; };
+		E85750FA20BAD4A000BA76E0 /* RCTwoStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = E85750F920BAD4A000BA76E0 /* RCTwoStudent.m */; };
+		E8A4173220BAC3F200AF30F8 /* RCStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4173120BAC3F200AF30F8 /* RCStudent.m */; };
 		E8C7220920B7F2950082DCDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C7220820B7F2950082DCDE /* AppDelegate.m */; };
 		E8C7220C20B7F2950082DCDE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C7220B20B7F2950082DCDE /* ViewController.m */; };
 		E8C7220F20B7F2950082DCDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C7220D20B7F2950082DCDE /* Main.storyboard */; };
@@ -36,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E85750F520BAD48F00BA76E0 /* RCOneStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCOneStudent.h; sourceTree = "<group>"; };
+		E85750F620BAD48F00BA76E0 /* RCOneStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCOneStudent.m; sourceTree = "<group>"; };
+		E85750F820BAD4A000BA76E0 /* RCTwoStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTwoStudent.h; sourceTree = "<group>"; };
+		E85750F920BAD4A000BA76E0 /* RCTwoStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTwoStudent.m; sourceTree = "<group>"; };
+		E8A4173020BAC3F200AF30F8 /* RCStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCStudent.h; sourceTree = "<group>"; };
+		E8A4173120BAC3F200AF30F8 /* RCStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCStudent.m; sourceTree = "<group>"; };
 		E8C7220420B7F2950082DCDE /* RuntimeForwardMessageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuntimeForwardMessageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C7220720B7F2950082DCDE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E8C7220820B7F2950082DCDE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -106,6 +115,12 @@
 			children = (
 				E8C7223920B7F3190082DCDE /* RCPerson.h */,
 				E8C7223A20B7F3190082DCDE /* RCPerson.m */,
+				E8A4173020BAC3F200AF30F8 /* RCStudent.h */,
+				E8A4173120BAC3F200AF30F8 /* RCStudent.m */,
+				E85750F520BAD48F00BA76E0 /* RCOneStudent.h */,
+				E85750F620BAD48F00BA76E0 /* RCOneStudent.m */,
+				E85750F820BAD4A000BA76E0 /* RCTwoStudent.h */,
+				E85750F920BAD4A000BA76E0 /* RCTwoStudent.m */,
 				E8C7220720B7F2950082DCDE /* AppDelegate.h */,
 				E8C7220820B7F2950082DCDE /* AppDelegate.m */,
 				E8C7220A20B7F2950082DCDE /* ViewController.h */,
@@ -269,8 +284,11 @@
 			files = (
 				E8C7220C20B7F2950082DCDE /* ViewController.m in Sources */,
 				E8C7223B20B7F3190082DCDE /* RCPerson.m in Sources */,
+				E8A4173220BAC3F200AF30F8 /* RCStudent.m in Sources */,
+				E85750FA20BAD4A000BA76E0 /* RCTwoStudent.m in Sources */,
 				E8C7221720B7F2960082DCDE /* main.m in Sources */,
 				E8C7220920B7F2950082DCDE /* AppDelegate.m in Sources */,
+				E85750F720BAD48F00BA76E0 /* RCOneStudent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

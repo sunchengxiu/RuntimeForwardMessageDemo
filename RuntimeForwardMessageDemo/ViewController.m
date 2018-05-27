@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "RCPerson.h"
+#import "RCStudent.h"
 @interface ViewController ()
 
 @end
@@ -17,9 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     RCPerson *person = [RCPerson new];
+    RCStudent *stu = [RCStudent new];
     person.name = @"sun";
     person.address = @"dalian";
     [person performSelector:@selector(eat) withObject:nil];
+    [person performSelector:@selector(drinking:) withObject:@"coffe"];
+    [stu performSelector:@selector(eating:) withObject:@"coke"];
     NSLog(@"%@--------%@",[person name],[person address]);
 }
 

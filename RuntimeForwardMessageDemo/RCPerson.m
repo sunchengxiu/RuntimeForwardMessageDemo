@@ -7,6 +7,7 @@
 //
 
 #import "RCPerson.h"
+#import "RCStudent.h"
 #import <objc/runtime.h>
 static const char *runtimeKey ;
 @implementation RCPerson
@@ -19,6 +20,12 @@ static const char *runtimeKey ;
     } else if([selName isEqualToString:@"eat"]){
         class_addMethod(self, sel, (IMP)internalEat, "v@:");
         return YES;
+    } else if ([selName isEqualToString:@"drinking:"]){
+        NSLog(@"drinking");
+        return [super resolveInstanceMethod:sel];
+    }
+    else if ([selName isEqualToString:@"eating:"]){
+        return [super resolveInstanceMethod:sel];
     }
     else {
         class_addMethod(self, sel, (IMP)internalGetter, "@@:");
@@ -26,11 +33,25 @@ static const char *runtimeKey ;
     }
     return [super resolveInstanceMethod:sel];
 }
+#pragma mark --------- runtime 第三步 运行时补救未实现的方法 ----------
+// 由Student展示
+
+#pragma mark --------- runtime 第二步 运行时补救未实现的方法 ----------
+/**
+ 将方法转发给别的对象实现,只能根据方法名转发给一个对象
+ */
+- (id)forwardingTargetForSelector:(SEL)aSelector{
+    RCStudent *student = [RCStudent new];
+    if ([student respondsToSelector:aSelector]) {
+        return student;
+    }
+    return [super forwardingTargetForSelector:aSelector];
+}
+#pragma mark --------- runtime 第一步 运行时补救未实现的方法 ----------
 static void internalEat(id self , SEL _cmd){
     NSLog(@"i am eating");
 }
 static id internalGetter(id self , SEL _cmd){
-    NSLog(@"getter");
     NSMutableDictionary *values = getValues(self);
     NSString *selectorName = NSStringFromSelector(_cmd);
     return [values valueForKey:selectorName];
